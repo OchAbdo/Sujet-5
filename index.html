@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Typer</title>
+  <!-- Lien Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/random-words"></script>
+</head>
+
+<body>
+  <div class="speed-typer-container" id="in-game">
+    <h1 class="mb-3">👩‍💻 Speed Typer 👨‍💻</h1>
+    <div class="d-flex justify-content-between mb-4">
+      <p>Time left: <span id="time-left" class="fw-bold">0 s</span></p>
+      <p>Score: <span id="score" class="fw-bold">0</span></p>
+    </div>
+    <p class="mb-2" id="foll1">Type the following:</p>
+    <h2 class="word" id="word-to-type"></h2>
+    <input type="text" id="user-input" class="form-control mt-3" placeholder="Start typing..." autofocus>
+    <p class="mb-2" id="foll2">Please choose a Level:</p>
+    <select name="level-game" class="form-control" id="level-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="difficult">Difficult</option>
+    </select>
+    <input  class="form-control mt-3" type="button" id="btn-in-game" value="play">
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
